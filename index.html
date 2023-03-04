@@ -20,24 +20,26 @@
     <title>Document</title>
   </head>
   <body>
+    <!-- Header -->
     <header class="page-header">
-      <!-- logo -->
+      <!-- logotype -->
       <div class="container main-nav">
-        <nav class="logo-item">
-          <a href="" class="logo-header">
-            Web<span class="logo-item-header">Studio</span>
+        <nav class="nav-item">
+          <a href="" class="nav-item__logo-type">
+            Web<span class="nav-item__logo-type--dark-theme">Studio</span>
           </a>
           <!-- navigation -->
           <ul class="nav-list">
-            <li class="item">
-              <a href="./index.html" class="nav-list-link active-page"
+            
+            <li class="nav-list__item">
+              <a href="./index.html" class="nav-item__nav-list-link active-page"
                 >Студія</a
               >
             </li>
-            <li class="item">
-              <a href="./portfolio.html" class="nav-list-link">Портфоліо</a>
+            <li class="nav-list__item">
+              <a href="./portfolio.html" class="nav-item__nav-list-link">Портфоліо</a>
             </li>
-            <li class="item"><a href="" class="nav-list-link">Контакти</a></li>
+            <li class="nav-list__item"><a href="" class="nav-item__nav-list-link">Контакти</a></li>
           </ul>
         </nav>
 
@@ -45,16 +47,16 @@
 
         <ul class="contacts-list">
           <li class="item">
-            <a href="mailto:info@devstudio.com" class="contact-list-link"
-              ><svg class="icon" width="16px" height="12px">
+            <a href="mailto:info@devstudio.com" class="contacts-list__contact-list-link"
+              ><svg class="contacts-list__icon" width="16px" height="12px">
                 <use href="./images/icons.svg/sprite11.svg#envelope-2"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
           <li class="item">
-            <a href="tel:+380961111111" class="contact-list-link"
-              ><svg class="icon" width="10px" height="16px">
+            <a href="tel:+380961111111" class="contacts-list__contact-list-link"
+              ><svg class="contacts-list__icon" width="10px" height="16px">
                 <use href="./images/icons.svg/sprite11.svg#smartphone2"></use>
               </svg>
               +38096111111</a
@@ -74,53 +76,53 @@
           </button>
         </div>
       </section>
-
+           <!-- Наші переваги -->
       <section class="section-item">
         <div class="container">
           <ul class="preference">
-            <li class="list-item">
+            <li class="preference-list-item">
               <div class="icon-container">
                 <svg class="icon" width="70px" height="70px">
                   <use href="./images/icons.svg/sprite1.svg#antenna"></use>
                 </svg>
               </div>
-              <h3 class="preference-list">УВАГА ДО ДЕТАЛЕЙ</h3>
-              <p class="preference-list-text">
+              <h3 class="preference-list-item__preference-title">УВАГА ДО ДЕТАЛЕЙ</h3>
+              <p class="preference-list-item__preference-list-text">
                 Ідейні міркування, і навіть початок повсякденної роботи з
                 формування позиції.
               </p>
             </li>
-            <li class="list-item">
+            <li class="preference-list-item">
               <div class="icon-container">
                 <svg class="icon" width="70px" height="70px">
                   <use href="./images/icons.svg/sprite1.svg#clock"></use>
                 </svg>
               </div>
-              <h3 class="preference-list">ПУНКТУАЛЬНІСТЬ</h3>
-              <p class="preference-list-text">
+              <h3 class="preference-list-item__preference-title">ПУНКТУАЛЬНІСТЬ</h3>
+              <p class="preference-list-item__preference-list-text">
                 Завдання організації, особливо рамки і місце навчання кадрів
                 тягне у себе.
               </p>
             </li>
-            <li class="list-item">
+            <li class="preference-list-item">
               <div class="icon-container">
                 <svg class="icon" width="70px" height="70px">
                   <use href="./images/icons.svg/sprite1.svg#diagram"></use>
                 </svg>
               </div>
-              <h3 class="preference-list">ПЛАНУВАННЯ</h3>
-              <p class="preference-list-text">
+              <h3 class="preference-list-item__preference-title">ПЛАНУВАННЯ</h3>
+              <p class="preference-list-item__preference-list-text">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
-            <li class="list-item">
+            <li class="preference-list-item">
               <div class="icon-container">
                 <svg class="icon" width="70px" height="70px">
                   <use href="./images/icons.svg/sprite1.svg#astronaut"></use>
                 </svg>
               </div>
-              <h3 class="preference-list">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-              <p class="preference-list-text">
+              <h3 class="preference-list-item__preference-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+              <p class="preference-list-item__preference-list-text">
                 Значимість цих проблем настільки очевидна, що реалізація
                 планових завдань.
               </p>
@@ -128,7 +130,7 @@
           </ul>
         </div>
       </section>
-
+        <!-- Чим ми займаємося -->
       <section class="section">
         <div class="container">
           <h2 class="discribe-item">Чим ми займаємося</h2>
@@ -175,12 +177,12 @@
           </ul>
         </div>
       </section>
-
+          <!-- Наша Команда -->
       <section class="team section">
         <div class="container">
           <h2 class="discribe-team">Наша команда</h2>
           <ul class="team-list">
-            <li class="team-list-element">
+            <li class="team-list__team-list-element">
               <img
                 class="img-item"
                 src="images/img4.jpg"
@@ -231,7 +233,7 @@
                 </ul>
               </div>
             </li>
-            <li class="team-list-element">
+            <li class="team-list__team-list-element">
               <img
                 class="img-item"
                 src="images/img5.jpg"
@@ -281,7 +283,7 @@
                 </ul>
               </div>
             </li>
-            <li class="team-list-element">
+            <li class="team-list__team-list-element">
               <img
                 class="img-item"
                 src="images/img6.jpg"
@@ -291,6 +293,7 @@
               <div class="team-members-discribe">
                 <h3 class="team-members">Микола Тарасов</h3>
                 <p class="team-members-text">Marketing</p>
+                
                 <ul class="list-links">
                   <li class="list-links-item">
                     <a class="links-item" href="">
@@ -331,7 +334,7 @@
                 </ul>
               </div>
             </li>
-            <li class="team-list-element">
+            <li class="team-list__team-list-element">
               <img
                 class="img-item"
                 src="images/img7.jpg"
@@ -341,6 +344,7 @@
               <div class="team-members-discribe">
                 <h3 class="team-members">Михайло Єрмаков</h3>
                 <p class="team-members-text">UI Designer</p>
+
                 <ul class="list-links">
                   <li class="list-links-item">
                     <a class="links-item" href="">
@@ -384,6 +388,7 @@
           </ul>
         </div>
       </section>
+      <!-- Постійні клієнти -->
       <section class="section">
         <div class="container">
           <h2 class="discribe-clients">Постійні клієнти</h2>
@@ -434,13 +439,15 @@
         </div>
       </section>
     </main>
-
+         <!-- Footer -->
     <footer class="footer">
       <div class="container-footer">
-        <div>
-          <a href="" class="logo-footer">
-            Web<span class="logo-item-footer">Studio</span>
+        <nav >
+          <!-- logotype-footer -->
+          <a href="" class="logo-type-footer">
+            Web<span class="logo-item-footer--white-theme">Studio</span>
           </a>
+          <!-- адреса та контакти в футері -->
           <address>
             <p class="adress">м. Київ, пр-т Лесі Українки, 26</p>
             <ul class="footer-contact-list">
@@ -456,58 +463,61 @@
               </li>
             </ul>
           </address>
-        </div>
+        </nav>
+        <!-- посилання на соцмережі -->
         <div class="footer-links-container">
           <h3 class="footer-links-title">Приєднуйтесь</h3>
           <ul class="footer-social-links">
             <li class="list-links-item">
-              <a class="links-item-footer" href="">
-                <svg class="links-icon-footer" width="20px" height="20px">
+              <a class="footer-social-links__links-item-footer" href="">
+                <svg class="links-icon-footer" width="20x" height="20px">
                   <use href="./images/icons.svg/sprite1.svg#instagram-2"></use>
                 </svg>
               </a>
             </li>
             <li class="list-links-item">
-              <a class="links-item-footer" href="">
-                <svg class="links-icon-footer" width="20px" height="20px">
+              <a class="footer-social-links__links-item-footer" href="">
+                <svg class="links-icon-footer" width="20x" height="20px">
                   <use href="./images/icons.svg/sprite1.svg#twitter-1"></use>
                 </svg>
               </a>
             </li>
             <li class="list-links-item">
-              <a class="links-item-footer" href="">
-                <svg class="links-icon-footer" width="20px" height="20px">
+              <a class="footer-social-links__links-item-footer" href="">
+                <svg class="links-icon-footer" width="20x" height="20px">
                   <use href="./images/icons.svg/sprite1.svg#facebook-1"></use>
                 </svg>
               </a>
             </li>
             <li class="list-links-item">
-              <a class="links-item-footer" href="">
-                <svg class="links-icon-footer" width="20px" height="20px">
+              <a class="footer-social-links__links-item-footer" href="">
+                <svg class="links-icon-footer" width="20x" height="20px">
                   <use href="./images/icons.svg/sprite1.svg#linkedin-1"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
+        <!-- форма підписки на розсилку у футері -->
         <form class="e-mail-input">
-          <p class="subscribe-news-title">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</p>
+          <p class="e-mail-input__subscribe-news-title">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</p>
           <input
             name="user_email"
-            class="subscribe-news"
+            class="e-mail-input__subscribe-news"
             type="email"
             placeholder="E-mail"
             required
           />
-          <button type="submit" class="subscribe-news-bth">
+          <button type="submit" class="e-mail-input__subscribe-news-bth">
             <span class="bthn-icon">Підписатися</span>
-            <svg class="icon-send" width="24px" height="24px">
+            <svg class="e-mail-input__icon-send" width="24px" height="24px">
               <use href="./images/icons.svg/sprite1.svg#icon-icon-send"></use>
             </svg>
           </button>
         </form>
       </div>
     </footer>
+    <!-- модальне вікно  -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <p class="form-top">Залиште свої дані, ми вам передзвонимо</p>

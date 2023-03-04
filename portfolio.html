@@ -21,24 +21,25 @@
     <title>Document</title>
   </head>
   <body>
+    <!-- Header -->
     <header class="page-header">
-      <!-- logo -->
+      <!-- logotype -->
       <div class="container main-nav">
-        <nav class="logo-item">
-          <a href="" class="logo-header">
-            Web<span class="logo-item-header">Studio</span>
+        <nav class="nav-item">
+          <a href="" class="nav-item__logo-type">
+            Web<span class="nav-item__logo-type--dark-theme">Studio</span>
           </a>
           <!-- navigation -->
           <ul class="nav-list">
-            <li class="item">
-              <a href="./index.html" class="nav-list-link">Студія</a>
+            <li class="nav-list__item">
+              <a href="./index.html" class="nav-item__nav-list-link">Студія</a>
             </li>
-            <li class="item">
-              <a href="./portfolio.html" class="nav-list-link active-page"
+            <li class="nav-list__item">
+              <a href="./portfolio.html" class="nav-item__nav-list-link active-page"
                 >Портфоліо</a
               >
             </li>
-            <li class="item"><a href="" class="nav-list-link">Контакти</a></li>
+            <li class="nav-list__item"><a href="" class="nav-item__nav-list-link">Контакти</a></li>
           </ul>
         </nav>
 
@@ -46,16 +47,16 @@
 
         <ul class="contacts-list">
           <li class="item">
-            <a href="mailto:info@devstudio.com" class="contact-list-link"
-              ><svg class="icon" width="16px" height="12px">
+            <a href="mailto:info@devstudio.com" class="contacts-list__contact-list-link"
+              ><svg class="contacts-list__icon" width="16px" height="12px">
                 <use href="./images/icons.svg/sprite11.svg#envelope-2"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
           <li class="item">
-            <a href="tel:+380961111111" class="contact-list-link"
-              ><svg class="icon" width="10px" height="16px">
+            <a href="tel:+380961111111" class="contacts-list__contact-list-link"
+              ><svg class="contacts-list__icon" width="10px" height="16px">
                 <use href="./images/icons.svg/sprite11.svg#smartphone2"></use>
               </svg>
               +38096111111</a
@@ -68,26 +69,26 @@
       <section class="section">
         <div class="container">
           <!-- кнопки -->
-          <ul class="selection-list">
+          <ul class="selection-list-btn">
             <li class="item">
-              <button type="button" class="button">Усі</button>
+              <button type="button" class="item__main-button">Усі</button>
             </li>
             <li class="item">
-              <button type="button" class="buttons">Веб-сайти</button>
+              <button type="button" class="item__buttons">Веб-сайти</button>
             </li>
             <li class="item">
-              <button type="button" class="buttons">Додатки</button>
+              <button type="button" class="item__buttons">Додатки</button>
             </li>
             <li class="item">
-              <button type="button" class="buttons">Дизайн</button>
+              <button type="button" class="item__buttons">Дизайн</button>
             </li>
             <li class="item">
-              <button type="button" class="buttons">Маркетинг</button>
+              <button type="button" class="item__buttons">Маркетинг</button>
             </li>
           </ul>
-
-          <ul class="section-list">
-            <li class="section-list-element">
+           <!-- Картки -посилання портфоліо -->
+          <ul class="portfolio-list">
+            <li class="portfolio-list__portfolio-list-element">
               <a href="" class="link">
                 <div class="hover-overlay">
                   <img
@@ -103,12 +104,12 @@
                   </p>
                 </div>
                 <div class="discribe-portfolio-item">
-                  <h2 class="link-name">Технокряк</h2>
-                  <p class="link-text">Веб-сайт</p>
+                  <h2 class="discribe-portfolio-item__link-name">Технокряк</h2>
+                  <p class="discribe-portfolio-item__link-text">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="section-list-element">
+            <li class="portfolio-list__portfolio-list-element">
               <a href="" class="link">
                 <div class="hover-overlay">
                   <img
@@ -119,12 +120,12 @@
                   <p class="description-text"></p>
                 </div>
                 <div class="discribe-portfolio-item">
-                  <h2 class="link-name">Постер New Orlean vs Golden Star</h2>
-                  <p class="link-text">Дизайн</p>
+                  <h2 class="discribe-portfolio-item__link-name">Постер New Orlean vs Golden Star</h2>
+                  <p class="discribe-portfolio-item__link-text">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="section-list-element">
+            <li class="portfolio-list__portfolio-list-element">
               <a href="" class="link">
                 <div class="hover-overlay">
                   <img
@@ -135,12 +136,12 @@
                   <p class="description-text"></p>
                 </div>
                 <div class="discribe-portfolio-item">
-                  <h2 class="link-name">Ресторан Seafood</h2>
-                  <p class="link-text">Додаток</p>
+                  <h2 class="discribe-portfolio-item__link-name">Ресторан Seafood</h2>
+                  <p class="discribe-portfolio-item__link-text">Додаток</p>
                 </div>
               </a>
             </li>
-            <li class="section-list-element">
+            <li class="portfolio-list__portfolio-list-element">
               <a href="" class="link">
                 <div class="hover-overlay">
                   <img
@@ -151,12 +152,12 @@
                   <p class="description-text"></p>
                 </div>
                 <div class="discribe-portfolio-item">
-                  <h2 class="link-name">Проєкт Prime</h2>
-                  <p class="link-text">Маркетинг</p>
+                  <h2 class="discribe-portfolio-item__link-name">Проєкт Prime</h2>
+                  <p class="discribe-portfolio-item__link-text">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="section-list-element">
+            <li class="portfolio-list__portfolio-list-element">
               <a href="" class="link">
                 <div class="hover-overlay">
                   <img
@@ -167,12 +168,12 @@
                   <p class="description-text"></p>
                 </div>
                 <div class="discribe-portfolio-item">
-                  <h2 class="link-name">Проєкт Boxes</h2>
-                  <p class="link-text">Додаток</p>
+                  <h2 class="discribe-portfolio-item__link-name">Проєкт Boxes</h2>
+                  <p class="discribe-portfolio-item__link-text">Додаток</p>
                 </div>
               </a>
             </li>
-            <li class="section-list-element">
+            <li class="portfolio-list__portfolio-list-element">
               <a href="" class="link">
                 <div class="hover-overlay">
                   <img
@@ -183,12 +184,12 @@
                   <p class="description-text"></p>
                 </div>
                 <div class="discribe-portfolio-item">
-                  <h2 class="link-name">Inspiration has no Borders</h2>
+                  <h2 class="discribe-portfolio-item__link-name">Inspiration has no Borders</h2>
                   <p class="link-text">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="section-list-element">
+            <li class="portfolio-list__portfolio-list-element">
               <a href="" class="link">
                 <div class="hover-overlay">
                   <img
@@ -199,12 +200,12 @@
                   <p class="description-text"></p>
                 </div>
                 <div class="discribe-portfolio-item">
-                  <h2 class="link-name">Видання Limited Edition</h2>
-                  <p class="link-text">Дизайн</p>
+                  <h2 class="discribe-portfolio-item__link-name">Видання Limited Edition</h2>
+                  <p class="discribe-portfolio-item__link-text">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="section-list-element">
+            <li class="portfolio-list__portfolio-list-element">
               <a href="" class="link">
                 <div class="hover-overlay">
                   <img
@@ -215,12 +216,12 @@
                   <p class="description-text"></p>
                 </div>
                 <div class="discribe-portfolio-item">
-                  <h2 class="link-name">Проєкт LAB</h2>
-                  <p class="link-text">Маркетинг</p>
+                  <h2 class="discribe-portfolio-item__link-name">Проєкт LAB</h2>
+                  <p class="discribe-portfolio-item__link-text">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="section-list-element">
+            <li class="portfolio-list__portfolio-list-element">
               <a href="" class="link">
                 <div class="hover-overlay">
                   <img
@@ -231,8 +232,8 @@
                   <p class="description-text"></p>
                 </div>
                 <div class="discribe-portfolio-item">
-                  <h2 class="link-name">Growing Business</h2>
-                  <p class="link-text">Додаток</p>
+                  <h2 class="discribe-portfolio-item__link-name">Growing Business</h2>
+                  <p class="discribe-portfolio-item__link-text">Додаток</p>
                 </div>
               </a>
             </li>
@@ -240,14 +241,16 @@
         </div>
       </section>
     </main>
-
+          <!-- Footer -->
     <footer class="footer">
       <div class="container-footer">
         <div>
-          <a href="" class="logo-footer">
-            Web<span class="logo-item-footer">Studio</span>
+          <!-- logotype-footer -->
+          <a href="" class="logo-type-footer">
+            Web<span class="logo-item-footer--white-theme">Studio</span>
           </a>
           <address>
+            <!-- адреса та контакти в футері -->
             <p class="adress">м. Київ, пр-т Лесі Українки, 26</p>
             <ul class="footer-contact-list">
               <li class="footer-item">
@@ -263,32 +266,33 @@
             </ul>
           </address>
         </div>
+        <!-- посилання на соцмережі -->
         <div class="footer-links-container">
           <h3 class="footer-links-title">Приєднуйтесь</h3>
           <ul class="footer-social-links">
             <li class="list-links-item">
-              <a class="links-item-footer" href="">
+              <a class="footer-social-links__links-item-footer" href="">
                 <svg class="links-icon-footer" width="20x" height="20px">
                   <use href="./images/icons.svg/sprite1.svg#instagram-2"></use>
                 </svg>
               </a>
             </li>
             <li class="list-links-item">
-              <a class="links-item-footer" href="">
+              <a class="footer-social-links__links-item-footer" href="">
                 <svg class="links-icon-footer" width="20x" height="20px">
                   <use href="./images/icons.svg/sprite1.svg#twitter-1"></use>
                 </svg>
               </a>
             </li>
             <li class="list-links-item">
-              <a class="links-item-footer" href="">
+              <a class="footer-social-links__links-item-footer" href="">
                 <svg class="links-icon-footer" width="20x" height="20px">
                   <use href="./images/icons.svg/sprite1.svg#facebook-1"></use>
                 </svg>
               </a>
             </li>
             <li class="list-links-item">
-              <a class="links-item-footer" href="">
+              <a class="footer-social-links__links-item-footer" href="">
                 <svg class="links-icon-footer" width="20x" height="20px">
                   <use href="./images/icons.svg/sprite1.svg#linkedin-1"></use>
                 </svg>
@@ -296,12 +300,13 @@
             </li>
           </ul>
         </div>
+        <!--  форма підписки на розсилку -->
         <form class="e-mail-input">
-          <p class="subscribe-news-title">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</p>
-          <input class="subscribe-news" type="text" placeholder="E-mail" />
-          <button type="submit" class="subscribe-news-bth">
+          <p class="e-mail-input__subscribe-news-title">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</p>
+          <input class="e-mail-input__subscribe-news" type="text" placeholder="E-mail" />
+          <button type="submit" class="e-mail-input__subscribe-news-bth">
             Підписатися
-            <svg class="icon-send" width="24px" height="24px">
+            <svg class="e-mail-input__icon-send" width="24px" height="24px">
               <use href="./images/icons.svg/sprite1.svg#icon-icon-send"></use>
             </svg>
           </button>

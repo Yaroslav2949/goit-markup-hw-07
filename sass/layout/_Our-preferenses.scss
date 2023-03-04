@@ -6,12 +6,12 @@
     margin: 0;
     padding: 0;
     display: flex;
-    &.list-item:last-child {
+    & .preference-list-item:last-child {
     margin-right: 0px;
 }
 }
 
-.list-item {
+.preference-list-item {
     margin-right: 30px;
 }
 
@@ -19,11 +19,12 @@
 //     margin-right: 0px;
 // }
 
-.preference-list {
+.preference-list-item__preference-title {
     font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
+    // font-weight: 700;
+    // font-size: 14px;
+    // line-height: 1.14;
+    @include font(14px, 700,1.14)
     letter-spacing: 0.03em;
     text-transform: uppercase;
     width: 270px;
@@ -32,10 +33,11 @@
     color: #212121;
 }
 
-.preference-list-text {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7;
+.preference-list-item__preference-list-text {
+    // font-weight: 400;
+    // font-size: 14px;
+    // line-height: 1.7;
+    @include font(14px, 400, 1.7)
     letter-spacing: 0.03em;
     color: #757575;
     margin: 0;
@@ -55,9 +57,10 @@
 }
 
 .discribe-item {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
+    // font-weight: 700;
+    // font-size: 36px;
+    // line-height: 1.17;
+    @include font(36px,700 , 1.17)
     text-align: center;
     letter-spacing: 0.03em;
     margin-top: 0;
@@ -88,15 +91,6 @@
    margin-right: 0px;
 } */
 
-.container-preference {
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    width: 1230px;
-
-    margin-bottom: 94px;
-}
 
 .lable {
     width: 370px;
@@ -109,7 +103,7 @@
     justify-content: center;
     pointer-events: none;
     align-items: center;
-    z-index: 1;
+  
 }
 
 .discribe-element-icon {
@@ -121,10 +115,10 @@
     margin: 0;
     font-family: "Roboto";
     font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-
+    // font-weight: 700;
+    // font-size: 14px;
+    // line-height: 16px;
+    @include font(14px , 700, 16px);
     letter-spacing: 0.03em;
     text-transform: uppercase;
 

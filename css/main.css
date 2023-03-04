@@ -83,7 +83,7 @@ ul {
   display: flex;
 }
 
-.contact-list-link {
+.contacts-list__contact-list-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -102,11 +102,11 @@ ul {
   -webkit-transition: color var(--duration) var(--timing-function);
   transition: color var(--duration) var(--timing-function);
 }
-.contact-list-link:hover, .contact-list-link:focus {
+.contacts-list__contact-list-link:hover, .contacts-list__contact-list-link:focus {
   color: var(--accent-color);
   fill: currentColor;
 }
-.contact-list-link > .icon {
+.contacts-list__contact-list-link .contacts-list__icon {
   margin-right: 10px;
   fill: #afb1b8;
   fill: currentColor;
@@ -123,14 +123,14 @@ ul {
   display: -ms-flexbox;
   display: flex;
 }
-.nav-list > .item {
+.nav-list__item {
   margin-right: 50px;
 }
-.nav-list > .item:last-child {
+.nav-list__item:last-child {
   margin-right: 0px;
 }
 
-.nav-list-link {
+.nav-item__nav-list-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -144,16 +144,16 @@ ul {
   -webkit-transition: color var(--duration) var(--timing-function);
   transition: color var(--duration) var(--timing-function);
 }
-.nav-list-link:active {
+.nav-item__nav-list-link:active {
   color: var(--accent-color);
 }
-.nav-list-link:hover {
+.nav-item__nav-list-link:hover {
   color: var(--accent-color);
 }
-.nav-list-link:focus {
+.nav-item__nav-list-link:focus {
   color: var(--accent-color);
 }
-.nav-list-link.active-page::after {
+.nav-item__nav-list-link.active-page::after {
   content: "";
   position: absolute;
   left: 0;
@@ -169,7 +169,7 @@ ul {
   color: var(--accent-color);
 }
 
-.logo-header {
+.nav-item__logo-type {
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
@@ -179,7 +179,7 @@ ul {
   text-decoration: none;
 }
 
-.logo-item {
+.nav-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -188,7 +188,7 @@ ul {
           align-items: center;
 }
 
-.logo-item-header {
+.nav-item__logo-type--dark-theme {
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
@@ -516,15 +516,15 @@ flex-direction: column;
   display: -ms-flexbox;
   display: flex;
 }
-.preference .list-item:last-child {
+.preference .preference-list-item:last-child {
   margin-right: 0px;
 }
 
-.list-item {
+.preference-list-item {
   margin-right: 30px;
 }
 
-.preference-list {
+.preference-list-item__preference-title {
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -537,7 +537,7 @@ flex-direction: column;
   color: #212121;
 }
 
-.preference-list-text {
+.preference-list-item__preference-list-text {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
@@ -600,15 +600,6 @@ flex-direction: column;
 
    margin-right: 0px;
 } */
-.container-preference {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  width: 1230px;
-  margin-bottom: 94px;
-}
-
 .lable {
   width: 370px;
   height: 70px;
@@ -626,7 +617,6 @@ flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  z-index: 1;
 }
 
 .discribe-element-icon {
@@ -676,7 +666,7 @@ flex-direction: column;
 }
 
 /* Альтернативний варіант розбиття блоків Наша Команда */
-.team-list-element {
+.team-list__team-list-element {
   width: 270px;
   margin-right: 30px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -684,7 +674,7 @@ flex-direction: column;
   border-radius: 0px 0px 4px 4px;
   color: #eeeeee;
 }
-.team-list-element:last-child {
+.team-list__team-list-element:last-child {
   margin-right: 0px;
 }
 
@@ -826,7 +816,7 @@ flex-direction: column;
   fill: #2196f3;
 }
 
-.logo-footer {
+.logo-type-footer {
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
@@ -837,7 +827,7 @@ flex-direction: column;
   text-decoration: none;
 }
 
-.logo-item-footer {
+.logo-item-footer--white-theme {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
@@ -937,8 +927,8 @@ flex-direction: column;
 .footer-links-title {
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 700;
   font-size: 14px;
+  font-weight: 700;
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -966,7 +956,7 @@ flex-direction: column;
           align-items: baseline;
 }
 
-.links-item-footer {
+.footer-social-links__links-item-footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -983,10 +973,10 @@ flex-direction: column;
   -webkit-transition: background-color 250ms var(--timing-function);
   transition: background-color 250ms var(--timing-function);
 }
-.links-item-footer:hover, .links-item-footer:focus {
+.footer-social-links__links-item-footer:hover, .footer-social-links__links-item-footer:focus {
   background-color: var(--accent-color);
 }
-.links-item-footer:hover.links-icon-footer, .links-item-footer:focus.links-icon-footer {
+.footer-social-links__links-item-footer:hover.links-icon-footer, .footer-social-links__links-item-footer:focus.links-icon-footer {
   fill: #fff;
 }
 
@@ -995,7 +985,7 @@ flex-direction: column;
 }
 
 /* форма підписки на розсилку в футері */
-.subscribe-news {
+.e-mail-input__subscribe-news {
   width: 358px;
   height: 50px;
   padding-left: 10px;
@@ -1010,11 +1000,11 @@ flex-direction: column;
   margin-right: 12px;
 }
 
-.subscribe-news-title {
+.e-mail-input__subscribe-news-title {
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 700;
   font-size: 14px;
+  font-weight: 700;
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -1022,7 +1012,7 @@ flex-direction: column;
   color: #ffffff;
 }
 
-.subscribe-news-bth {
+.e-mail-input__subscribe-news-bth {
   position: relative;
   padding: 10px 62px 10px 28px;
   width: 200px;
@@ -1044,7 +1034,7 @@ flex-direction: column;
   margin-left: 110px;
 }
 
-.icon-send {
+.e-mail-input__icon-send {
   position: absolute;
   top: 50%;
   right: 28px;
@@ -1052,7 +1042,7 @@ flex-direction: column;
           transform: translateY(-50%);
 }
 
-.selection-list {
+.selection-list-btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1063,14 +1053,14 @@ flex-direction: column;
   padding: 0px;
   margin-bottom: 50px;
 }
-.selection-list.item {
+.selection-list-btn .item {
   margin-right: 8px;
 }
-.selection-list.item:last-child {
+.selection-list-btn .item:last-child {
   margin-right: 0px;
 }
 
-.section-list {
+.portfolio-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1094,7 +1084,7 @@ flex-direction: column;
   padding-bottom: 94px;
 }
 
-.buttons {
+.item__buttons {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
@@ -1110,7 +1100,7 @@ flex-direction: column;
   transition: background-color var(--duration) var(--timing-function), color var(--duration) var(--timing-function), box-shadow var(--duration) var(--timing-function);
   transition: background-color var(--duration) var(--timing-function), color var(--duration) var(--timing-function), box-shadow var(--duration) var(--timing-function), -webkit-box-shadow var(--duration) var(--timing-function);
 }
-.buttons:hover, .buttons:focus {
+.item__buttons:hover, .item__buttons:focus {
   background-color: #2196f3;
   color: #ffffff;
   cursor: pointer;
@@ -1118,7 +1108,7 @@ flex-direction: column;
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.button {
+.item__main-button {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
@@ -1135,7 +1125,7 @@ flex-direction: column;
   transition: box-shadow var(--duration) var(--timing-function);
   transition: box-shadow var(--duration) var(--timing-function), -webkit-box-shadow var(--duration) var(--timing-function);
 }
-.button:hover,.button:focus {
+.item__main-button:hover, .item__main-button:focus {
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
@@ -1150,7 +1140,7 @@ flex-direction: column;
   transition: box-shadow var(--duration) var(--timing-function), -webkit-box-shadow var(--duration) var(--timing-function);
 }
 
-.link-name {
+.discribe-portfolio-item__link-name {
   font-family: "Roboto";
   font-weight: 700;
   font-size: 18px;
@@ -1161,7 +1151,7 @@ flex-direction: column;
   text-decoration: none;
 }
 
-.link-text {
+.discribe-portfolio-item__link-text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.9;
@@ -1183,19 +1173,19 @@ flex-direction: column;
   margin-bottom: 30px;
 
 } */
-.section-list-element .link:hover {
+.portfolio-list__portfolio-list-element .link:hover {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.section-list-element .link:focus {
+.portfolio-list__portfolio-list-element .link:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.section-list-element .link:hover .description-text {
+.portfolio-list__portfolio-list-element .link:hover .description-text {
   -webkit-transform: translateY(0%);
           transform: translateY(0%);
 }
-.section-list-element .link:focus .description-text {
+.portfolio-list__portfolio-list-element .link:focus .description-text {
   -webkit-transform: translateY(0%);
           transform: translateY(0%);
 }
@@ -1219,8 +1209,8 @@ flex-direction: column;
   font-weight: 400;
   line-height: 1.56;
   letter-spacing: 0.03em;
- 
-  transform: translateY(100%);
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
   -webkit-transition: -webkit-transform var(--duration) var(--timing-function);
   transition: -webkit-transform var(--duration) var(--timing-function);
   transition: transform var(--duration) var(--timing-function);

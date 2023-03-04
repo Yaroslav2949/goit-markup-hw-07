@@ -15,7 +15,7 @@
     display: flex;
 }
 
-.contact-list-link {
+.contacts-list__contact-list-link {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -32,7 +32,7 @@
     color: var(--accent-color);
     fill: currentColor;
 }
-    &.icon {
+    & .contacts-list__icon {
     margin-right: 10px;
     fill: #afb1b8;
     fill: currentColor;
@@ -60,7 +60,7 @@
     margin: 0;
     padding: 0;
     display: flex;
-    &>.item {
+    &__item {
     margin-right: 50px;
       &:last-child {
     margin-right: 0px;
@@ -73,7 +73,7 @@
 //     margin-right: 50px;
 // }
 
-.nav-list-link {
+.nav-item__nav-list-link {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;

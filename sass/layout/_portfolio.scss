@@ -1,11 +1,11 @@
 
-.selection-list {
+.selection-list-btn {
   display: flex;
   justify-content: center;
   margin: 0px;
   padding: 0px;
   margin-bottom: 50px;
-   &.item {
+   & .item {
   margin-right: 8px;
        &:last-child {
         margin-right: 0px;
@@ -21,7 +21,7 @@
 // .selection-list .item:last-child {
 //   margin-right: 0px;
 // }
-.section-list {
+.portfolio-list {
   display: flex;
   flex-wrap: wrap;
   margin: 0px;
@@ -43,11 +43,12 @@
   padding-bottom: 94px;
 }
 
-.buttons {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.6;
+.item__buttons {
+  // font-weight: 500;
+  // font-size: 16px;
+  // line-height: 1.6;
   text-align: center;
+  @include font(16px, 500, 1.6);
   letter-spacing: 0.03em;
   padding: 6px 22px 6px 22px;
   color: #212121;
@@ -80,7 +81,7 @@
 //     0px 2px 2px rgba(0, 0, 0, 0.12);
 // }
 
-.button {
+.item__main-button {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
@@ -114,7 +115,7 @@
   transition: box-shadow var(--duration) var(--timing-function);
 }
 
-.link-name {
+.discribe-portfolio-item__link-name {
   font-family: "Roboto";
 
   font-weight: 700;
@@ -126,7 +127,7 @@
   text-decoration: none;
 }
 
-.link-text {
+.discribe-portfolio-item__link-text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.9;
@@ -167,21 +168,21 @@
 //   transform: translateY(0%);
 // }
 
-.section-list-element {
+.portfolio-list__portfolio-list-element {
 
-&.link:hover {
+& .link:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-&.link:focus {
+&  .link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-&.link:hover .description-text {
+& .link:hover .description-text {
   transform: translateY(0%);
 }
 
-&.link:focus .description-text {
+& .link:focus .description-text {
   transform: translateY(0%);
 }
 
