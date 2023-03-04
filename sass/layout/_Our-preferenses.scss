@@ -37,7 +37,7 @@
     // font-weight: 400;
     // font-size: 14px;
     // line-height: 1.7;
-    @include font(14px, 400, 1.7)
+    @include font(14px, 400, 1.7);
     letter-spacing: 0.03em;
     color: #757575;
     margin: 0;
@@ -60,7 +60,7 @@
     // font-weight: 700;
     // font-size: 36px;
     // line-height: 1.17;
-    @include font(36px,700 , 1.17)
+    @include font(36px,700 , 1.17);
     text-align: center;
     letter-spacing: 0.03em;
     margin-top: 0;
