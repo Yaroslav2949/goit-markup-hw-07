@@ -167,7 +167,13 @@
 // .section-list-element > .link:focus .description-text {
 //   transform: translateY(0%);
 // }
-
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px;
+  padding: 0px;
+  gap: 30px;
+}
 .portfolio-list__portfolio-list-element {
 
 & .link:hover {

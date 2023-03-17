@@ -3,7 +3,7 @@
     // font-weight: 400;
     // font-size: 14px;
     // line-height: 1.7;
-     @include font ( 14px, 400, 1.7)
+     @include font ( 14px, 400, 1.7);
     letter-spacing: 0.03em;
 
     color: rgba(255, 255, 255, 0.6);
@@ -92,11 +92,7 @@
     margin-bottom: 9px;
 }
 
-.footer {
-    background: var(--background-footer-color);
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
+
 
 .footer-social-links {
     display: flex;
@@ -122,17 +118,28 @@
     display: block;
     margin-left: 70px;
 }
-
-.container-footer {
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    width: 1200px;
-    display: flex;
-
-    align-items: baseline;
+.footer {
+    background: var(--background-footer-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
+// .container-footer {
+//     margin-left: auto;
+//     margin-right: auto;
+//     padding-left: 15px;
+//     padding-right: 15px;
+//     width: 1200px;
+//     display: flex;
+
+//     align-items: baseline;
+// }
+.footer-container{
+display: flex;
+
+align-items: baseline;
+
+}
+
 
 .footer-social-links__links-item-footer {
     display: flex;
