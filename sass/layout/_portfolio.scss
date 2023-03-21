@@ -29,15 +29,7 @@
   gap: 30px;
 }
 
-.discribe-portfolio-item {
-  padding: 20px 24px;
-  border-left: 1px solid;
 
-  border-bottom: 1px solid;
-
-  border-right: 1px solid;
-  border-color: #eeeeee;
-}
 .section-portfolio {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -115,16 +107,27 @@
   transition: box-shadow var(--duration) var(--timing-function);
 }
 
+.discribe-portfolio-item {
+  padding: 20px 24px;
+  border-left: 1px solid;
+
+  border-bottom: 1px solid;
+
+  border-right: 1px solid;
+  border-color: #eeeeee;
+}
+
+
 .discribe-portfolio-item__link-name {
   font-family: "Roboto";
-
+  font-style: normal;
   font-weight: 700;
   font-size: 18px;
-  line-height: 2;
+  line-height: 36px;
   margin-bottom: 4px;
   margin-top: 0px;
   color: #212121;
-  text-decoration: none;
+  letter-spacing: 0.06em;
 }
 
 .discribe-portfolio-item__link-text {
